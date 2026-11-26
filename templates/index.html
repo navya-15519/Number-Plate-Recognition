@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Plate Recognition</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>NUMBER PLATE RECOGNITION</h1>
+    <p>Automatic Vehicle Number Plate Detection System</p>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>Upload Vehicle Image</h2>
+    <p>Select a vehicle image to recognize its number plate.</p>
+
+    <form action="/recognize" method="POST"
+    enctype="multipart/form-data">
+
+        <input type="file" name="vehicle_image"
+        accept="image/*" required>
+
+        <button type="submit">
+            Recognize Number Plate
+        </button>
+    </form>
+</section>
+
+<section class="card">
+    <h2>Live Webcam Recognition</h2>
+
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" hidden></canvas>
+
+    <button id="startCamera">Start Webcam</button>
+    <button id="capture">Capture & Recognize</button>
+    <button id="stopCamera">Stop Webcam</button>
+
+    <div class="result-box">
+        <h3>Recognition Result</h3>
+        <p id="webcamResult">Waiting for image...</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>Automatic Number Plate Recognition System</p>
+    <p>Student Project</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}">
+</script>
+
+</body>
+</html>
