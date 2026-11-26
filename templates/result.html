@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognition Result</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>NUMBER PLATE RECOGNITION</h1>
+    <p>Detection Result</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Recognition Successful</h2>
+
+        <h3>Detected Vehicle Number</h3>
+
+        <div class="number">
+            {{ number }}
+        </div>
+
+        <h3>Uploaded Vehicle Image</h3>
+        <img src="{{ image_url }}" alt="Vehicle">
+
+        <h3>Detected Plate</h3>
+        <img src="{{ plate_url }}" alt="Number plate">
+
+        <a href="/" class="back">Go Back Home</a>
+    </section>
+</main>
+
+<footer>
+    <p>Automatic Number Plate Recognition System</p>
+</footer>
+
+</body>
+</html>
