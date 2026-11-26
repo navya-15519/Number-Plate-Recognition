@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+.card h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+button, .back {
+    background: #1675c5;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 7px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+button:hover, .back:hover {
+    background: #0c4f88;
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+    border-radius: 10px;
+    background: black;
+}
+
+.result-box {
+    background: #e8f2ff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.number {
+    background: #fff;
+    border: 3px solid #222;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    overflow-wrap: anywhere;
+}
+
+.card img {
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
+    display: block;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 20px 12px;
+    }
+  }
